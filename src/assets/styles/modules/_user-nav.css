@@ -1,0 +1,52 @@
+.user-nav {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+
+  &__item {
+    position: relative;
+
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+
+    padding: 0 2rem;
+
+    &:hover {
+      background-color: $color-light-2;
+    }
+  }
+
+  &__icon {
+    width: 2.25rem;
+    height: 2.25rem;
+
+    fill: $color-dark-2;
+  }
+
+  &__notification {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 1.75rem;
+    height: 1.75rem;
+
+    font-size: 0.8rem;
+    color: #ffffff;
+
+    border-radius: 50%;
+    background-color: $color-primary;
+  }
+
+  &__avatar {
+    height: 3.75rem;
+    margin-right: 1rem;
+
+    border-radius: 50%;
+  }
+}

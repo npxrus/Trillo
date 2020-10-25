@@ -10,7 +10,6 @@ import minmax from "postcss-media-minmax";
 import csso from "postcss-csso";
 import terser from "gulp-terser";
 import autoprefixer from "autoprefixer";
-import groupMedia from "gulp-group-css-media-queries";
 import browserSync from "browser-sync";
 
 // System
@@ -63,7 +62,6 @@ const html = () => {
 const css = () => {
   return gulp
     .src(paths.styles.src)
-    .pipe(groupMedia())
     .pipe(
       postcss([postcssImport, simpleVars, minmax, nested, autoprefixer, csso])
     )

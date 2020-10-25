@@ -1,1 +1,11 @@
 @import "modules/_reset";
+@import "modules/_variables";
+@import "modules/_base";
+@import "modules/_container";
+@import "modules/_header";
+@import "modules/_content";
+@import "modules/_sidebar";
+@import "modules/_hotel-view";
+@import "modules/_logo";
+@import "modules/_search-form";
+@import "modules/_user-nav";
