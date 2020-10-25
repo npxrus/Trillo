@@ -8,7 +8,7 @@
   font-size: 1.4rem;
 
   background-color: #ffffff;
-  border-block-color: $color-light-2;
+  border-bottom: 1px solid $color-light-2;
 
   &__logo {
     margin-left: 2rem;
