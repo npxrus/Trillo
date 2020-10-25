@@ -1,0 +1,8 @@
+.details {
+  display: flex;
+
+  padding: 4.5rem;
+
+  background-color: $color-light-1;
+  border-bottom: 1px solid $color-light-2;
+}
