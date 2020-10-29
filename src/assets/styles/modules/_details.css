@@ -7,4 +7,12 @@
 
   background-color: $color-light-1;
   border-bottom: 1px solid $color-light-2;
+
+  @media screen and (width <= 900px) {
+    padding: 3rem;
+  }
+
+  @media screen and (width <= 600px) {
+    flex-direction: column;
+  }
 }

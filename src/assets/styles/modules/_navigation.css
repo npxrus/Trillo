@@ -1,11 +1,25 @@
 .navigation {
   font-size: 1.4rem;
 
+  &__list {
+    @media screen and (width <= 900px) {
+      display: flex;
+    }
+  }
+
   &__item {
     position: relative;
 
     &:not(:last-child) {
       margin-bottom: 0.5rem;
+
+      @media screen and (width <= 900px) {
+        margin-bottom: 0;
+      }
+    }
+
+    @media screen and (width <= 900px) {
+      flex: 1;
     }
   }
 
@@ -49,6 +63,17 @@
     color: $color-light-1;
     text-decoration: none;
     text-transform: uppercase;
+
+    @media screen and (width <= 900px) {
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    @media screen and (width <= 600px) {
+      flex-direction: column;
+
+      padding: 1.5rem 0.5rem;
+    }
   }
 
   &__icon {
@@ -57,5 +82,11 @@
     margin-right: 2rem;
 
     fill: currentColor;
+
+    @media screen and (width <= 600px) {
+      margin: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
 }

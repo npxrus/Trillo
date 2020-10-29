@@ -44,9 +44,15 @@
   }
 
   &__avatar {
+    width: 3.75rem;
     height: 3.75rem;
     margin-right: 1rem;
 
     border-radius: 50%;
+
+    @media screen and (width <= 600px) {
+      height: 3rem;
+      margin-right: 2rem;
+    }
   }
 }

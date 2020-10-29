@@ -9,5 +9,9 @@
 
   &__navigation {
     margin-top: 3.5rem;
+
+    @media screen and (width <= 900px) {
+      margin: 0;
+    }
   }
 }

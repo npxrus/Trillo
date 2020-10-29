@@ -3,6 +3,10 @@
 
   text-align: center;
 
+  @media screen and (width <= 900px) {
+    padding: 2rem 0;
+  }
+
   &__header {
     margin-bottom: 2.5rem;
 
