@@ -13,8 +13,18 @@
 
   transition: all 0.2s ease-out;
 
+  & span {
+    margin-left: 3px;
+
+    transition: margin-left 0.2s ease-out;
+  }
+
   &:hover {
-    color: $color-dark-1;
+    color: $color-dark-3;
+
+    span {
+      margin-left: 8px;
+    }
   }
 
   &:focus {
